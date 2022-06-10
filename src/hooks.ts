@@ -8,7 +8,6 @@ export const handle: Handle = async ({ event, resolve }) => {
       if (prerendering) {
         return minify(html, {
           removeAttributeQuotes: true,
-          collapseInlineTagWhitespace: true,
           collapseWhitespace: true,
           removeComments: true,
           removeRedundantAttributes: true,
